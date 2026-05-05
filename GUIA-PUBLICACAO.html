@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Guia de Publicação - Origami Easy</title>
+<style>
+body{font-family:'Segoe UI',sans-serif;max-width:800px;margin:40px auto;padding:0 20px;color:#333;line-height:1.7}
+h1{color:#1a1a2e;border-bottom:3px solid #2ED573;padding-bottom:10px}
+h2{color:#0f3460;margin-top:40px}
+.step{background:#f8f9fa;border-left:4px solid #2ED573;padding:16px 20px;margin:20px 0;border-radius:0 8px 8px 0}
+.step h3{margin:0 0 8px;color:#2ED573}
+code{background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:.9em}
+.warning{background:#fff3cd;border-left:4px solid #ffc107;padding:12px 16px;margin:16px 0;border-radius:0 8px 8px 0}
+.success{background:#d4edda;border-left:4px solid #28a745;padding:12px 16px;margin:16px 0;border-radius:0 8px 8px 0}
+a{color:#0f3460}
+ol{padding-left:20px}
+ol li{margin:8px 0}
+img{max-width:100%;border:1px solid #ddd;border-radius:8px;margin:10px 0}
+</style>
+</head>
+<body>
+<h1>🦢 Guia de Publicação - Origami Easy PWA</h1>
+
+<p>Este guia te leva do zero até ter seu app publicado online, instalável no celular e computador, em menos de 10 minutos.</p>
+
+<h2>O que você vai ter no final:</h2>
+<ul>
+<li>Um link público (ex: <code>origami-easy.vercel.app</code>) que qualquer pessoa pode acessar</li>
+<li>App instalável no celular (Android/iPhone) e computador</li>
+<li>Funciona 100% offline depois de instalado</li>
+<li>Dados salvos localmente no dispositivo do usuário</li>
+</ul>
+
+<h2>Passo 1: Criar conta no GitHub</h2>
+<div class="step">
+<h3>Se já tem conta, pule para o Passo 2</h3>
+<ol>
+<li>Acesse <a href="https://github.com/signup" target="_blank">github.com/signup</a></li>
+<li>Crie sua conta com email e senha</li>
+<li>Confirme o email</li>
+</ol>
+</div>
+
+<h2>Passo 2: Criar repositório no GitHub</h2>
+<div class="step">
+<h3>Subir os arquivos do app</h3>
+<ol>
+<li>No GitHub, clique no <strong>+</strong> no canto superior direito → <strong>"New repository"</strong></li>
+<li>Nome: <code>origami-easy</code></li>
+<li>Marque <strong>"Public"</strong> (necessário para Vercel gratuita)</li>
+<li>Clique <strong>"Create repository"</strong></li>
+<li>Na página que abrir, clique <strong>"uploading an existing file"</strong></li>
+<li>Arraste TODOS os arquivos da pasta <code>origami-easy-pwa</code>:
+  <ul>
+    <li><code>index.html</code></li>
+    <li><code>manifest.json</code></li>
+    <li><code>sw.js</code></li>
+    <li><code>vercel.json</code></li>
+    <li>Pasta <code>icons/</code> (arraste a pasta inteira)</li>
+  </ul>
+</li>
+<li>Clique <strong>"Commit changes"</strong></li>
+</ol>
+</div>
+
+<div class="warning">
+⚠️ <strong>Importante:</strong> Arraste os arquivos diretamente, NÃO a pasta origami-easy-pwa. Os arquivos devem ficar na raiz do repositório.
+</div>
+
+<h2>Passo 3: Criar conta na Vercel</h2>
+<div class="step">
+<h3>Hospedagem gratuita</h3>
+<ol>
+<li>Acesse <a href="https://vercel.com/signup" target="_blank">vercel.com/signup</a></li>
+<li>Clique em <strong>"Continue with GitHub"</strong></li>
+<li>Autorize a conexão com seu GitHub</li>
+</ol>
+</div>
+
+<h2>Passo 4: Publicar na Vercel</h2>
+<div class="step">
+<h3>Deploy automático</h3>
+<ol>
+<li>Na Vercel, clique <strong>"Add New..." → "Project"</strong></li>
+<li>Encontre o repositório <code>origami-easy</code> e clique <strong>"Import"</strong></li>
+<li>Na tela de configuração:
+  <ul>
+    <li>Framework Preset: <strong>Other</strong></li>
+    <li>Root Directory: deixe vazio (ou <code>./</code>)</li>
+    <li>Build Command: deixe vazio</li>
+    <li>Output Directory: <code>./</code></li>
+  </ul>
+</li>
+<li>Clique <strong>"Deploy"</strong></li>
+<li>Aguarde ~30 segundos...</li>
+</ol>
+</div>
+
+<div class="success">
+✅ <strong>Pronto!</strong> Seu app estará disponível em algo como:<br>
+<code>https://origami-easy.vercel.app</code><br><br>
+Você pode compartilhar esse link com qualquer pessoa!
+</div>
+
+<h2>Passo 5: Personalizar o domínio (opcional)</h2>
+<div class="step">
+<h3>Trocar o nome do link</h3>
+<ol>
+<li>Na Vercel, vá em <strong>Settings → Domains</strong></li>
+<li>Você pode mudar o subdomínio gratuito (ex: <code>meu-financeiro.vercel.app</code>)</li>
+<li>Ou conectar um domínio próprio se comprar um (ex: <code>origamieasy.com.br</code> ~R$40/ano)</li>
+</ol>
+</div>
+
+<h2>Como instalar o app no celular/computador</h2>
+<div class="step">
+<h3>Depois de publicado:</h3>
+<ol>
+<li><strong>No celular (Android):</strong> Abra o link no Chrome → menu ⋮ → "Instalar app" ou "Adicionar à tela inicial"</li>
+<li><strong>No celular (iPhone):</strong> Abra no Safari → botão compartilhar → "Adicionar à Tela de Início"</li>
+<li><strong>No computador:</strong> Abra no Chrome → clique no ícone de instalar (⊕) na barra de endereço</li>
+</ol>
+</div>
+
+<h2>Como atualizar o app depois</h2>
+<div class="step">
+<h3>Atualizações automáticas</h3>
+<p>Sempre que você atualizar os arquivos no GitHub, a Vercel republica automaticamente em segundos. Basta:</p>
+<ol>
+<li>No GitHub, navegue até o arquivo que quer alterar</li>
+<li>Clique no ícone de lápis (editar)</li>
+<li>Faça a alteração</li>
+<li>Clique "Commit changes"</li>
+<li>A Vercel detecta e republica sozinha!</li>
+</ol>
+</div>
+
+<h2>Para comercializar</h2>
+<div class="step">
+<h3>Opções de monetização</h3>
+<ul>
+<li><strong>Freemium:</strong> App gratuito com funcionalidades premium (ex: exportar relatórios, mais categorias)</li>
+<li><strong>Venda direta:</strong> Coloque o link na Hotmart/Kiwify como "acesso vitalício"</li>
+<li><strong>Assinatura:</strong> Adicione login (Firebase Auth) e controle de acesso por plano</li>
+</ul>
+<p>Para a opção mais simples (venda direta), basta criar um produto na Hotmart com o link do app como "área de membros".</p>
+</div>
+
+</body>
+</html>

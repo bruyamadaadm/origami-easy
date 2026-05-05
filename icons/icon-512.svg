@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="80" fill="#1a1a2e"/>
+  <g transform="translate(56, 70) scale(1.2)">
+    <defs>
+      <linearGradient id="gw" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#8BC34A"/><stop offset="100%" style="stop-color:#2E7D32"/>
+      </linearGradient>
+      <linearGradient id="gb" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#FFD54F"/><stop offset="100%" style="stop-color:#FF8F00"/>
+      </linearGradient>
+      <linearGradient id="bw" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#64B5F6"/><stop offset="100%" style="stop-color:#1E88E5"/>
+      </linearGradient>
+    </defs>
+    <polygon points="60,95 105,30 170,60" fill="url(#gw)"/>
+    <polygon points="170,60 250,65 210,150 130,140" fill="url(#gb)"/>
+    <polygon points="250,65 265,15 280,55" fill="#FF7043"/>
+    <polygon points="250,65 310,80 280,55" fill="#FFA726"/>
+    <polygon points="210,150 310,120 300,165 240,170" fill="url(#bw)"/>
+    <polygon points="130,140 170,145 155,165 110,155" fill="#EF5350"/>
+    <polygon points="60,95 40,82 52,88" fill="#2E7D32"/>
+  </g>
+</svg>
